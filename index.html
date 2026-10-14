@@ -90,7 +90,7 @@
 
     <main class="max-w-md w-full mx-auto px-4 py-4 flex-grow space-y-4">
 
-        <!-- TAB 1: MATERI -->
+        <!-- TAB 1: Material -->
         <section id="tab-materi" class="space-y-4">
             <!-- Hero Card -->
             <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200">
@@ -109,7 +109,7 @@
                         \(ax^2 + bx + c = 0\)
                     </div>
                     <div class="text-[11px] text-blue-100 text-center font-medium mt-1">
-                        Syarat: \(a, b, c \in \mathbb{R}\) dan \(a \neq 0\)
+                        Condition: \(a, b, c \in \mathbb{R}\) dan \(a \neq 0\)
                     </div>
                 </div>
 
@@ -119,7 +119,7 @@
                         \(D = b^2 - 4ac\)
                     </div>
                     <p class="text-[11px] text-slate-500 mt-1.5">
-                        Berasal dari rumus ABC kuadratik: \(x_{1,2} = \frac{-b \pm \sqrt{D}}{2a}\)
+                        from quadratic formula: \(x_{1,2} = \frac{-b \pm \sqrt{D}}{2a}\)
                     </p>
                 </div>
             </div>
@@ -127,7 +127,7 @@
             <!-- 3 Sifat Visual Cards -->
             <div class="space-y-3">
                 <h3 class="text-sm font-bold text-slate-800 flex items-center gap-1.5">
-                    <i class="fa-solid fa-layer-group text-blue-600"></i> 3 Sifat Nilai Diskriminan
+                    <i class="fa-solid fa-layer-group text-blue-600"></i> 3 Properties of the Discriminant Value
                 </h3>
 
                 <!-- D > 0 -->
@@ -180,7 +180,7 @@
             </div>
         </section>
 
-        <!-- TAB 2: KALKULATOR -->
+        <!-- TAB 2: Calculator -->
         <section id="tab-kalkulator" class="hidden space-y-4">
             <!-- Equations Banner -->
             <div class="bg-slate-900 text-white p-4 rounded-2xl text-center shadow-md">
@@ -272,7 +272,7 @@
             </div>
         </section>
 
-        <!-- TAB 3: KUIS -->
+        <!-- TAB 3: Quiz -->
         <section id="tab-kuis" class="hidden space-y-4">
             <!-- Quiz Progress & Score Banner -->
             <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-200 flex items-center justify-between">
@@ -296,7 +296,7 @@
             <!-- Question Card -->
             <div id="quiz-card" class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200 space-y-4">
                 <div id="quiz-question-text" class="text-sm font-bold text-slate-800 leading-relaxed">
-                    Berapakah nilai diskriminan dari persamaan kuadrat \(x^2 - 4x + 4 = 0\)?
+                    Whats is the discriminant of \(x^2 - 4x + 4 = 0\)?
                 </div>
 
                 <div id="quiz-options-container" class="space-y-2">
@@ -315,7 +315,7 @@
             </div>
         </section>
 
-        <!-- TAB 4: SIMULASI / PLAYGROUND SLIDER -->
+        <!-- TAB 4: SIMULATION / PLAYGROUND SLIDER -->
         <section id="tab-simulasi" class="hidden space-y-4">
             <div class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-4 rounded-2xl shadow-md">
                 <h2 class="text-base font-bold flex items-center gap-2">
@@ -410,7 +410,7 @@
 
         const quizQuestions = [
             {
-                q: "Berapakah nilai diskriminan dari persamaan kuadrat \\(x^2 - 6x + 9 = 0\\)?",
+                q: "What is the discriminant of \\(x^2 - 6x + 9 = 0\\)?",
                 options: ["D = 0", "D = 12", "D = -36", "D = 36"],
                 correct: 0,
                 explanation: "\\(a=1, b=-6, c=9\\). \\(D = (-6)^2 - 4(1)(9) = 36 - 36 = 0\\)."
