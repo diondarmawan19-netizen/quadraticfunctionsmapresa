@@ -135,7 +135,7 @@
                     <div class="space-y-1 flex-1">
                         <span class="bg-emerald-500 text-white text-[10px] font-extrabold px-2 py-0.5 rounded">D &gt; 0 (Positif)</span>
                         <h4 class="font-bold text-slate-800 text-sm">Two distinct real roots</h4>
-                        <p class="text-[11px] text-slate-500 leading-tight">Parabola intersects the $x$-axis at two points.
+                        <p class="text-[11px] text-slate-500 leading-tight">Parabola intersects the x-axis at two points.
                     </div>
                     <div class="w-16 h-16 bg-emerald-50 rounded-xl p-1 border border-emerald-100 flex items-center justify-center shrink-0">
                         <svg viewBox="0 0 100 60" class="w-full h-full text-emerald-600">
@@ -151,8 +151,8 @@
                 <div class="bg-white p-4 rounded-2xl border border-amber-200 shadow-sm flex items-center justify-between gap-3">
                     <div class="space-y-1 flex-1">
                         <span class="bg-amber-500 text-white text-[10px] font-extrabold px-2 py-0.5 rounded">D = 0 (Nol)</span>
-                        <h4 class="font-bold text-slate-800 text-sm">1 Akar Real (Kembar)</h4>
-                        <p class="text-[11px] text-slate-500 leading-tight">Grafik <b>menyinggung sumbu-X</b> tepat di <b>satu titik</b> (\(x_1 = x_2\)).</p>
+                        <h4 class="font-bold text-slate-800 text-sm">One real root</h4>
+                        <p class="text-[11px] text-slate-500 leading-tight">Parabola touches the x-axis at its vertex.
                     </div>
                     <div class="w-16 h-16 bg-amber-50 rounded-xl p-1 border border-amber-100 flex items-center justify-center shrink-0">
                         <svg viewBox="0 0 100 60" class="w-full h-full text-amber-600">
@@ -167,8 +167,8 @@
                 <div class="bg-white p-4 rounded-2xl border border-rose-200 shadow-sm flex items-center justify-between gap-3">
                     <div class="space-y-1 flex-1">
                         <span class="bg-rose-500 text-white text-[10px] font-extrabold px-2 py-0.5 rounded">D &lt; 0 (Negatif)</span>
-                        <h4 class="font-bold text-slate-800 text-sm">Tidak Ada Akar Real</h4>
-                        <p class="text-[11px] text-slate-500 leading-tight">Akar imajiner. Grafik <b>tidak menyentuh</b> sumbu-X sama sekali.</p>
+                        <h4 class="font-bold text-slate-800 text-sm">No Real Roots</h4>
+                        <p class="text-[11px] text-slate-500 leading-tight">Parabola does not intersect the x-axis.
                     </div>
                     <div class="w-16 h-16 bg-rose-50 rounded-xl p-1 border border-rose-100 flex items-center justify-center shrink-0">
                         <svg viewBox="0 0 100 60" class="w-full h-full text-rose-600">
@@ -184,7 +184,7 @@
         <section id="tab-kalkulator" class="hidden space-y-4">
             <!-- Equations Banner -->
             <div class="bg-slate-900 text-white p-4 rounded-2xl text-center shadow-md">
-                <div class="text-[10px] text-slate-400 font-semibold uppercase tracking-wider mb-1">Persamaan Aktif</div>
+                <div class="text-[10px] text-slate-400 font-semibold uppercase tracking-wider mb-1">Active Equation</div>
                 <div id="calc-live-equation" class="text-xl font-bold tracking-wide text-blue-300">
                     \(1x^2 + 0x - 4 = 0\)
                 </div>
@@ -192,7 +192,7 @@
 
             <!-- Mobile Touch Stepper Inputs -->
             <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-200 space-y-3">
-                <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Input Koefisien (Atur Nilai)</h3>
+                <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Coefficient Input</h3>
 
                 <!-- Stepper A -->
                 <div class="flex items-center justify-between bg-slate-50 p-2.5 rounded-xl border border-slate-200">
@@ -217,7 +217,7 @@
 
                 <!-- Stepper C -->
                 <div class="flex items-center justify-between bg-slate-50 p-2.5 rounded-xl border border-slate-200">
-                    <div class="font-bold text-sm text-slate-700">c (konstanta)</div>
+                    <div class="font-bold text-sm text-slate-700">c (constant)</div>
                     <div class="flex items-center gap-2">
                         <button onclick="adjustVal('calc-c', -0.5)" class="w-8 h-8 rounded-lg bg-white border border-slate-300 text-slate-700 font-bold active:bg-blue-100 touch-active flex items-center justify-center">-</button>
                         <input type="number" id="calc-c" value="-4" step="0.5" onchange="updateCalcFromInput()" class="w-12 text-center bg-transparent font-extrabold text-blue-600 text-base focus:outline-none">
@@ -228,14 +228,14 @@
 
             <!-- Step-by-Step Box -->
             <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-200 space-y-3">
-                <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider">Langkah Perhitungan</h3>
+                <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider">Steps</h3>
                 <div class="space-y-2 text-xs">
                     <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200">
-                        <span class="text-slate-400 block mb-0.5 text-[10px]">Rumus:</span>
+                        <span class="text-slate-400 block mb-0.5 text-[10px]">Formula:</span>
                         <div class="font-bold text-indigo-700">\(D = b^2 - 4ac\)</div>
                     </div>
                     <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200">
-                        <span class="text-slate-400 block mb-0.5 text-[10px]">Substitusi:</span>
+                        <span class="text-slate-400 block mb-0.5 text-[10px]">Substitute:</span>
                         <div id="calc-substitusi-text" class="font-semibold text-slate-800">\(D = (0)^2 - 4(1)(-4)\)</div>
                     </div>
                     <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200">
@@ -247,10 +247,10 @@
                 <!-- Status Badge -->
                 <div id="calc-status-badge" class="p-3.5 rounded-xl border bg-emerald-50 border-emerald-200 text-emerald-800 space-y-1">
                     <div class="font-bold text-xs flex items-center gap-1.5">
-                        <i class="fa-solid fa-circle-check text-emerald-600"></i> Sifat Akar:
+                        <i class="fa-solid fa-circle-check text-emerald-600"></i> Nature of the roots:
                     </div>
                     <p id="calc-status-text" class="text-[11px] leading-relaxed">
-                        Nilai \(D > 0\). Memiliki <b>2 akar real yang berbeda</b>.
+                        Nilai \(D > 0\). two distinct real roots</b>.
                     </p>
                 </div>
             </div>
@@ -260,14 +260,14 @@
                 <div class="flex items-center justify-between mb-2">
                     <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider">Grafik Parabola</h3>
                     <span id="calc-vertex-text" class="text-[10px] font-bold bg-blue-50 text-blue-700 px-2 py-0.5 rounded-md border border-blue-200">
-                        Puncak: (0, -4)
+                        Vertex: (0, -4)
                     </span>
                 </div>
                 <div class="relative w-full h-64 bg-slate-50 rounded-xl border border-slate-200 p-1">
                     <canvas id="calcChart"></canvas>
                 </div>
                 <div id="calc-roots-text" class="text-center text-xs font-bold text-slate-700 mt-2 bg-slate-50 p-2 rounded-lg border border-slate-200">
-                    Akar: \(x_1 = -2.00, x_2 = 2.00\)
+                    roots: \(x_1 = -2.00, x_2 = 2.00\)
                 </div>
             </div>
         </section>
@@ -308,7 +308,7 @@
                     <div id="quiz-explanation-title" class="font-bold text-xs"></div>
                     <div id="quiz-explanation-body" class="text-[11px] text-slate-600 leading-normal"></div>
                     <button onclick="nextQuizQuestion()" class="w-full mt-2 bg-blue-600 text-white font-bold text-xs py-2.5 rounded-xl shadow-sm touch-active flex items-center justify-center gap-1.5">
-                        <span>Lanjut ke Soal Berikutnya</span>
+                        <span>Next Question</span>
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
@@ -319,19 +319,19 @@
         <section id="tab-simulasi" class="hidden space-y-4">
             <div class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-4 rounded-2xl shadow-md">
                 <h2 class="text-base font-bold flex items-center gap-2">
-                    <i class="fa-solid fa-gamepad"></i> Real-Time Playground
+                    <i class="fa-solid fa-gamepad"></i> Real-Time Simulation
                 </h2>
-                <p class="text-[11px] text-purple-100 mt-0.5">Geser slider di bawah dengan jari Anda dan perhatikan perubahan grafik & nilai \(D\) secara langsung!</p>
+                <p class="text-[11px] text-purple-100 mt-0.5">Slide the slider with your own finger and watch for the changing graph and the value of D directly
             </div>
 
             <!-- Dynamic Live Stats Badge -->
             <div class="grid grid-cols-2 gap-2 text-center">
                 <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-sm">
-                    <span class="text-[10px] font-bold text-slate-400 block uppercase">Nilai Diskriminan</span>
+                    <span class="text-[10px] font-bold text-slate-400 block uppercase">Discriminant</span>
                     <span id="sim-d-val" class="text-xl font-black text-indigo-600">D = 16.00</span>
                 </div>
                 <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-center items-center">
-                    <span class="text-[10px] font-bold text-slate-400 block uppercase">Sifat Kurva</span>
+                    <span class="text-[10px] font-bold text-slate-400 block uppercase">Curve</span>
                     <span id="sim-sifat-tag" class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200 mt-1">2 Akar Real</span>
                 </div>
             </div>
@@ -348,8 +348,8 @@
                 <!-- Slider A -->
                 <div class="space-y-1">
                     <div class="flex justify-between items-center text-xs font-bold">
-                        <span class="text-slate-700">Koefisien a: <span id="sim-a-disp" class="text-blue-600 font-extrabold">1.0</span></span>
-                        <span class="text-[10px] text-slate-400">Lengkung Kurva</span>
+                        <span class="text-slate-700">Coefficient a: <span id="sim-a-disp" class="text-blue-600 font-extrabold">1.0</span></span>
+                        <span class="text-[10px] text-slate-400">Curvature</span>
                     </div>
                     <input type="range" id="sim-slider-a" min="-5" max="5" step="0.2" value="1" oninput="updateSimFromSliders()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer">
                 </div>
@@ -357,8 +357,8 @@
                 <!-- Slider B -->
                 <div class="space-y-1">
                     <div class="flex justify-between items-center text-xs font-bold">
-                        <span class="text-slate-700">Koefisien b: <span id="sim-b-disp" class="text-blue-600 font-extrabold">0.0</span></span>
-                        <span class="text-[10px] text-slate-400">Posisi Puncak (X)</span>
+                        <span class="text-slate-700">Coefficient b: <span id="sim-b-disp" class="text-blue-600 font-extrabold">0.0</span></span>
+                        <span class="text-[10px] text-slate-400">Vertex (X)</span>
                     </div>
                     <input type="range" id="sim-slider-b" min="-10" max="10" step="0.5" value="0" oninput="updateSimFromSliders()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer">
                 </div>
@@ -366,8 +366,8 @@
                 <!-- Slider C -->
                 <div class="space-y-1">
                     <div class="flex justify-between items-center text-xs font-bold">
-                        <span class="text-slate-700">Konstanta c: <span id="sim-c-disp" class="text-blue-600 font-extrabold">-4.0</span></span>
-                        <span class="text-[10px] text-slate-400">Geser Y-Intercept</span>
+                        <span class="text-slate-700">Constant c: <span id="sim-c-disp" class="text-blue-600 font-extrabold">-4.0</span></span>
+                        <span class="text-[10px] text-slate-400">Slide Y-Intercept</span>
                     </div>
                     <input type="range" id="sim-slider-c" min="-10" max="10" step="0.5" value="-4" oninput="updateSimFromSliders()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer">
                 </div>
@@ -416,25 +416,25 @@
                 explanation: "\\(a=1, b=-6, c=9\\). \\(D = (-6)^2 - 4(1)(9) = 36 - 36 = 0\\)."
             },
             {
-                q: "Jika grafik fungsi kuadrat menyinggung sumbu-X di 1 titik, maka nilai diskriminannya adalah...",
-                options: ["D > 0", "D = 0", "D < 0", "D tidak terdefinisi"],
+                q: "if the graph of the quadratic function intersect in 1 point at x-axis, then the discriminant is...",
+                options: ["D > 0", "D = 0", "D < 0", "D undefined"],
                 correct: 1,
-                explanation: "Grafik yang menyinggung sumbu-X tepat di satu titik memiliki nilai diskriminan \\(D = 0\\) (akar kembar)."
+                explanation: "graph which intersect in 1 point at x axis has a discriminant of 0"
             },
             {
-                q: "Tentukan nilai \\(D\\) dari persamaan \\(x^2 + 2x + 5 = 0\\)!",
+                q: "what is \\(D\\) from \\(x^2 + 2x + 5 = 0\\)!",
                 options: ["D = 16", "D = 0", "D = -16", "D = -20"],
                 correct: 2,
                 explanation: "\\(a=1, b=2, c=5\\). \\(D = 2^2 - 4(1)(5) = 4 - 20 = -16\\)."
             },
             {
-                q: "Persamaan kuadrat memiliki 2 akar real yang berbeda jika nilai diskriminannya...",
+                q: "A quadratic equation has  two intersect point with x axis if ...",
                 options: ["D < 0", "D = 0", "D > 0", "D = -1"],
                 correct: 2,
-                explanation: "Syarat agar persamaan kuadrat memiliki dua akar real yang berbeda adalah nilai diskriminan positif (\\(D > 0\\))."
+                explanation: "The condition for a quadratic equation to have two distinct real roots is that the discriminant is positive. (\\(D > 0\\))."
             },
             {
-                q: "Berapa nilai \\(c\\) agar \\(x^2 - 4x + c = 0\\) memiliki 1 akar kembar (\\(D = 0\\))?",
+                q: "what is \\(c\\) so \\(x^2 - 4x + c = 0\\) has one real root (\\(D = 0\\))?",
                 options: ["c = 2", "c = 4", "c = -4", "c = 8"],
                 correct: 1,
                 explanation: "\\(D = (-4)^2 - 4(1)(c) = 0 \\implies 16 - 4c = 0 \\implies 4c = 16 \\implies c = 4\\)."
@@ -507,28 +507,28 @@
 
             if (D > 0) {
                 badge.className = "p-3.5 rounded-xl border bg-emerald-50 border-emerald-200 text-emerald-800 space-y-1";
-                statusText.innerHTML = `Nilai \\(D = ${D.toFixed(2).replace('.00','')} > 0\\). Memiliki **2 akar real berbeda** dan memotong sumbu-X.`;
+                statusText.innerHTML = `Value \\(D = ${D.toFixed(2).replace('.00','')} > 0\\). has two disctinct real roots and intersect at 2 points with the x axis `;
             } else if (D === 0) {
                 badge.className = "p-3.5 rounded-xl border bg-amber-50 border-amber-200 text-amber-800 space-y-1";
-                statusText.innerHTML = `Nilai \\(D = 0\\). Memiliki **1 akar real (kembar)** dan menyinggung sumbu-X.`;
+                statusText.innerHTML = `Value \\(D = 0\\). has one real root and intersect at 1 point with the x axis`;
             } else {
                 badge.className = "p-3.5 rounded-xl border bg-rose-50 border-rose-200 text-rose-800 space-y-1";
-                statusText.innerHTML = `Nilai \\(D = ${D.toFixed(2).replace('.00','')} < 0\\). **Tidak memiliki akar real** (akar imajiner).`;
+                statusText.innerHTML = `Value \\(D = ${D.toFixed(2).replace('.00','')} < 0\\). do not have real roots and do not intersect with the x axis`;
             }
 
             // Key Points
             const xVertex = -b / (2 * a);
             const yVertex = a * (xVertex * xVertex) + b * xVertex + c;
-            document.getElementById('calc-vertex-text').innerText = `Puncak: (${xVertex.toFixed(1)}, ${yVertex.toFixed(1)})`;
+            document.getElementById('calc-vertex-text').innerText = `vertex: (${xVertex.toFixed(1)}, ${yVertex.toFixed(1)})`;
 
             if (D >= 0) {
                 const x1 = (-b + Math.sqrt(D)) / (2 * a);
                 const x2 = (-b - Math.sqrt(D)) / (2 * a);
                 document.getElementById('calc-roots-text').innerHTML = D === 0 
-                    ? `Akar Kembar: \\(x_1 = x_2 = ${x1.toFixed(2)}\\)`
-                    : `Akar Real: \\(x_1 = ${Math.min(x1, x2).toFixed(2)}, x_2 = ${Math.max(x1, x2).toFixed(2)}\\)`;
+                    ? `common root: \\(x_1 = x_2 = ${x1.toFixed(2)}\\)`
+                    : `real root: \\(x_1 = ${Math.min(x1, x2).toFixed(2)}, x_2 = ${Math.max(x1, x2).toFixed(2)}\\)`;
             } else {
-                document.getElementById('calc-roots-text').innerHTML = `<span class="text-rose-600 font-bold">Tidak Memotong Sumbu-X (Akar Imajinai)</span>`;
+                document.getElementById('calc-roots-text').innerHTML = `<span class="text-rose-600 font-bold">do not intersect with the x axis</span>`;
             }
 
             if (window.renderMathInElement) {
@@ -556,13 +556,13 @@
             const sifatTag = document.getElementById('sim-sifat-tag');
             if (D > 0) {
                 sifatTag.className = "text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200 mt-1";
-                sifatTag.innerText = "2 Akar Real (D > 0)";
+                sifatTag.innerText = "2 distinct real roots (D > 0)";
             } else if (D === 0) {
                 sifatTag.className = "text-xs font-bold text-amber-600 bg-amber-50 px-2 py-0.5 rounded-full border border-amber-200 mt-1";
-                sifatTag.innerText = "1 Akar Kembar (D = 0)";
+                sifatTag.innerText = "1 real root (D = 0)";
             } else {
                 sifatTag.className = "text-xs font-bold text-rose-600 bg-rose-50 px-2 py-0.5 rounded-full border border-rose-200 mt-1";
-                sifatTag.innerText = "Akar Imajinai (D < 0)";
+                sifatTag.innerText = "no real root (D < 0)";
             }
 
             const xVertex = -b / (2 * a);
